@@ -25,44 +25,55 @@ Clone or download the repository to your local machine.
 
 Compile the program using your C compiler.
 
-```gcc SGF.c SGF_HEADER.c -o SGF```
+```bash
+gcc SGF.c SGF_HEADER.c -o SGF
+```
 
-Then run the compiled program with the storage size and command as arguments:
+Then run the compiled program :
 
-```./SGF [storage size] [command] [command arguments]```
+```bash
+./SGF
+```
 
 ## Usage
 
-`ls [directory address] [directory name]` - Display the contents of a directory
+Chose whether to load existing filesystem structure or initialize the default structure : 
 
-`rm [directory address/file address] [directory/file name]` - Delete a directory or file
+![screenshot-1](https://drive.google.com/uc?export=view&id=19IFROdldKujEHzSwatudw7ftnU_S8v2_) 
 
-`mkdir [directory address] [directory name]` - Create a new directory
+Enter storage size :
 
-`mkfile [directory address] [file name] [file size]` - Create a new file
+![screenshot-1](https://drive.google.com/uc?export=view&id=196C_RfQylEg8dceMZO9xyEBvwLD_SAIW) 
 
-`cpfile [source file address] [source file name] [destination address] [destination file name]` - Copy a file
+The filesystem tree will be displayed as well as storage informations :
 
-`cpdir [source directory address] [source directory name] [destination address] [destination directory name]` - Copy a directory
+![screenshot-1](https://drive.google.com/uc?export=view&id=19GjnNcnW-ym8Ii0DyqwuIgnN9bd79-_V) 
 
-`exist [directory/file name]` - Search for a directory or file
+Enter any of the following commands :
 
+- `ls` - Display the contents of a directory
 
+- `rm` - Delete a directory or file
+
+- `mkdir` - Create a new directory
+
+- `mkfile` - Create a new file
+
+- `cpfile` - Copy a file
+
+- `cpdir` - Copy a directory
+
+- `exist` - Search for a directory or file
+
+Example of using `ls` command :
+
+![screenshot-1](https://drive.google.com/uc?export=view&id=18gm6HqkyvN-q__B8R7ECNQeMaK2NvHnz) 
 
 ## Limitations
 
-- The program currently only support one level deep directory tree
-- The program currently only support one level deep file tree
+- The program currently is not supporting loading saved filesystem structures
 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-*Feel free to customize or add more information as you see fit*
+This project is licensed under the MIT License.
