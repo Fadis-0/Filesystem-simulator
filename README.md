@@ -26,6 +26,7 @@ Clone or download the repository to your local machine.
 Compile the program using your C compiler.
 
 ```bash
+
 gcc SGF.c SGF_HEADER.c -o SGF
 ```
 
